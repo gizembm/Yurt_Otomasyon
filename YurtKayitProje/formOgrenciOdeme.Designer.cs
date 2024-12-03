@@ -71,6 +71,7 @@
             this.txtOdenecekTutar.Name = "txtOdenecekTutar";
             this.txtOdenecekTutar.Size = new System.Drawing.Size(100, 22);
             this.txtOdenecekTutar.TabIndex = 2;
+            this.txtOdenecekTutar.Text = "550";
             // 
             // dgvOdemeler
             // 
@@ -90,15 +91,17 @@
             this.btnOde.TabIndex = 4;
             this.btnOde.Text = "ÖDE";
             this.btnOde.UseVisualStyleBackColor = true;
+            this.btnOde.Click += new System.EventHandler(this.btnOde_Click);
             // 
             // btnOdemeler
             // 
-            this.btnOdemeler.Location = new System.Drawing.Point(701, 333);
+            this.btnOdemeler.Location = new System.Drawing.Point(680, 320);
             this.btnOdemeler.Name = "btnOdemeler";
-            this.btnOdemeler.Size = new System.Drawing.Size(92, 25);
+            this.btnOdemeler.Size = new System.Drawing.Size(113, 25);
             this.btnOdemeler.TabIndex = 4;
             this.btnOdemeler.Text = "ÖDEMELER";
             this.btnOdemeler.UseVisualStyleBackColor = true;
+            this.btnOdemeler.Click += new System.EventHandler(this.btnOdemeler_Click);
             // 
             // formOgrenciOdeme
             // 
@@ -113,6 +116,7 @@
             this.Controls.Add(this.cmbAy);
             this.Name = "formOgrenciOdeme";
             this.Text = "formOgrenciOdeme";
+            this.Load += new System.EventHandler(this.formOgrenciOdeme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOdemeler)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

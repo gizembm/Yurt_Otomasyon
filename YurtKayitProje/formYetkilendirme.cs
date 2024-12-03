@@ -330,5 +330,11 @@ namespace YurtKayitProje
              
         }
 
+        private void btnRaporla_Click(object sender, EventArgs e)
+        {
+            formAdminYetkilendirmeRaporlama rapor = new formAdminYetkilendirmeRaporlama();
+            this.Hide();
+            rapor.ShowDialog();
+        }
     }
 }

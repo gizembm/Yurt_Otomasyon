@@ -666,5 +666,19 @@ namespace YurtKayitProje
             dtpBitis.Value = DateTime.Today;
             btnIzınListele.PerformClick();
         }
+
+        private void btnOgrenciRaporla_Click(object sender, EventArgs e)
+        {
+            formAdminOgrenciRapor rapor = new formAdminOgrenciRapor();
+            this.Hide();
+            rapor.ShowDialog();
+        }
+
+        private void btnIzinRaporla_Click(object sender, EventArgs e)
+        {
+            formAdminOgrenciIzinRaporu rapor = new formAdminOgrenciIzinRaporu();
+            this.Hide();
+            rapor .ShowDialog();
+        }
     }
 }

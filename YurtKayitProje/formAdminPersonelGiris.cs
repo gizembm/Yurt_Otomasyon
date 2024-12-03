@@ -123,6 +123,8 @@ namespace YurtKayitProje
             string adSoyad = txtAdSoyad.Text.Trim();
             string tel = txtTel.Text.Trim();
             string gorevAd = cmbGorevAd.SelectedItem.ToString();
+            string oda = txtSorumluOda.Text.Trim();
+            int kullaniciID = Convert.ToInt32(txtKullaniciID.Text);
 
             try
             {
@@ -224,6 +226,18 @@ namespace YurtKayitProje
         }
 
         private void formAdminPersonelGiris_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRaporla_Click(object sender, EventArgs e)
+        {
+            formAdminPersonelRaporlama rapor = new formAdminPersonelRaporlama();
+            this.Hide();
+            rapor.ShowDialog();
+        }
+
+        private void dgvPeronelListele_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

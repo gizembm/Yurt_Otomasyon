@@ -41,19 +41,24 @@
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbGorevAd = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSorumluOda = new System.Windows.Forms.TextBox();
+            this.txtKullaniciID = new System.Windows.Forms.TextBox();
+            this.btnRaporla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeronelListele)).BeginInit();
             this.SuspendLayout();
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(180, 144);
+            this.txtID.Location = new System.Drawing.Point(204, 101);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(146, 22);
             this.txtID.TabIndex = 0;
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(180, 237);
+            this.txtTel.Location = new System.Drawing.Point(204, 194);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(146, 22);
             this.txtTel.TabIndex = 1;
@@ -61,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(121, 150);
+            this.label1.Location = new System.Drawing.Point(145, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 16);
             this.label1.TabIndex = 2;
@@ -80,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(104, 240);
+            this.label3.Location = new System.Drawing.Point(128, 197);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 16);
             this.label3.TabIndex = 2;
@@ -89,7 +94,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(104, 289);
+            this.label4.Location = new System.Drawing.Point(128, 246);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 2;
@@ -104,6 +109,7 @@
             this.dgvPeronelListele.RowTemplate.Height = 24;
             this.dgvPeronelListele.Size = new System.Drawing.Size(684, 298);
             this.dgvPeronelListele.TabIndex = 4;
+            this.dgvPeronelListele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeronelListele_CellContentClick);
             // 
             // btnSil
             // 
@@ -137,7 +143,7 @@
             // 
             // txtAdSoyad
             // 
-            this.txtAdSoyad.Location = new System.Drawing.Point(180, 188);
+            this.txtAdSoyad.Location = new System.Drawing.Point(204, 145);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(146, 22);
             this.txtAdSoyad.TabIndex = 0;
@@ -145,7 +151,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(106, 191);
+            this.label5.Location = new System.Drawing.Point(130, 148);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 16);
             this.label5.TabIndex = 2;
@@ -160,26 +166,73 @@
             "MÜDÜR",
             "GÜVENLİK",
             "HEMŞİRE"});
-            this.cmbGorevAd.Location = new System.Drawing.Point(180, 281);
+            this.cmbGorevAd.Location = new System.Drawing.Point(204, 238);
             this.cmbGorevAd.Name = "cmbGorevAd";
             this.cmbGorevAd.Size = new System.Drawing.Size(146, 24);
             this.cmbGorevAd.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(113, 284);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Sorumlu Oda";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(130, 335);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 16);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "KullaniciID";
+            // 
+            // txtSorumluOda
+            // 
+            this.txtSorumluOda.Location = new System.Drawing.Point(204, 284);
+            this.txtSorumluOda.Name = "txtSorumluOda";
+            this.txtSorumluOda.Size = new System.Drawing.Size(146, 22);
+            this.txtSorumluOda.TabIndex = 1;
+            // 
+            // txtKullaniciID
+            // 
+            this.txtKullaniciID.Location = new System.Drawing.Point(204, 332);
+            this.txtKullaniciID.Name = "txtKullaniciID";
+            this.txtKullaniciID.Size = new System.Drawing.Size(146, 22);
+            this.txtKullaniciID.TabIndex = 1;
+            // 
+            // btnRaporla
+            // 
+            this.btnRaporla.Location = new System.Drawing.Point(958, 45);
+            this.btnRaporla.Name = "btnRaporla";
+            this.btnRaporla.Size = new System.Drawing.Size(119, 30);
+            this.btnRaporla.TabIndex = 6;
+            this.btnRaporla.Text = "RAPORLA";
+            this.btnRaporla.UseVisualStyleBackColor = true;
+            this.btnRaporla.Click += new System.EventHandler(this.btnRaporla_Click);
             // 
             // formAdminPersonelGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 495);
+            this.Controls.Add(this.btnRaporla);
             this.Controls.Add(this.cmbGorevAd);
             this.Controls.Add(this.dgvPeronelListele);
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSil);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtKullaniciID);
+            this.Controls.Add(this.txtSorumluOda);
             this.Controls.Add(this.txtTel);
             this.Controls.Add(this.txtAdSoyad);
             this.Controls.Add(this.txtID);
@@ -207,5 +260,10 @@
         private System.Windows.Forms.TextBox txtAdSoyad;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbGorevAd;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtSorumluOda;
+        private System.Windows.Forms.TextBox txtKullaniciID;
+        private System.Windows.Forms.Button btnRaporla;
     }
 }

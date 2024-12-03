@@ -43,13 +43,14 @@
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.txtKullanıcıId = new System.Windows.Forms.TextBox();
             this.txtKullanıcıAd = new System.Windows.Forms.TextBox();
+            this.btnRaporla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvYetkilendirmeListesi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExport.Location = new System.Drawing.Point(636, 363);
+            this.btnExport.Location = new System.Drawing.Point(639, 374);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(140, 41);
             this.btnExport.TabIndex = 14;
@@ -60,7 +61,7 @@
             // btnImport
             // 
             this.btnImport.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnImport.Location = new System.Drawing.Point(490, 363);
+            this.btnImport.Location = new System.Drawing.Point(493, 374);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(140, 41);
             this.btnImport.TabIndex = 15;
@@ -115,7 +116,7 @@
             // dgvYetkilendirmeListesi
             // 
             this.dgvYetkilendirmeListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvYetkilendirmeListesi.Location = new System.Drawing.Point(321, 35);
+            this.dgvYetkilendirmeListesi.Location = new System.Drawing.Point(324, 46);
             this.dgvYetkilendirmeListesi.Name = "dgvYetkilendirmeListesi";
             this.dgvYetkilendirmeListesi.RowHeadersWidth = 51;
             this.dgvYetkilendirmeListesi.RowTemplate.Height = 24;
@@ -199,11 +200,22 @@
             this.txtKullanıcıAd.Size = new System.Drawing.Size(187, 28);
             this.txtKullanıcıAd.TabIndex = 7;
             // 
+            // btnRaporla
+            // 
+            this.btnRaporla.Location = new System.Drawing.Point(676, 12);
+            this.btnRaporla.Name = "btnRaporla";
+            this.btnRaporla.Size = new System.Drawing.Size(103, 28);
+            this.btnRaporla.TabIndex = 20;
+            this.btnRaporla.Text = "RAPORLA";
+            this.btnRaporla.UseVisualStyleBackColor = true;
+            this.btnRaporla.Click += new System.EventHandler(this.btnRaporla_Click);
+            // 
             // formYetkilendirme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRaporla);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.btnListele);
@@ -245,5 +257,6 @@
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.TextBox txtKullanıcıId;
         private System.Windows.Forms.TextBox txtKullanıcıAd;
+        private System.Windows.Forms.Button btnRaporla;
     }
 }

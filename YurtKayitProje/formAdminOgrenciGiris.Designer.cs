@@ -65,6 +65,8 @@
             this.btnIzinSil = new System.Windows.Forms.Button();
             this.txtKullaniciID = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.btnOgrenciRaporla = new System.Windows.Forms.Button();
+            this.btnIzinRaporla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOgrenciListele)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIzin)).BeginInit();
             this.SuspendLayout();
@@ -397,11 +399,33 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Kullanıcı ID";
             // 
+            // btnOgrenciRaporla
+            // 
+            this.btnOgrenciRaporla.Location = new System.Drawing.Point(764, 18);
+            this.btnOgrenciRaporla.Name = "btnOgrenciRaporla";
+            this.btnOgrenciRaporla.Size = new System.Drawing.Size(103, 23);
+            this.btnOgrenciRaporla.TabIndex = 11;
+            this.btnOgrenciRaporla.Text = "RAPORLA";
+            this.btnOgrenciRaporla.UseVisualStyleBackColor = true;
+            this.btnOgrenciRaporla.Click += new System.EventHandler(this.btnOgrenciRaporla_Click);
+            // 
+            // btnIzinRaporla
+            // 
+            this.btnIzinRaporla.Location = new System.Drawing.Point(1699, 18);
+            this.btnIzinRaporla.Name = "btnIzinRaporla";
+            this.btnIzinRaporla.Size = new System.Drawing.Size(103, 23);
+            this.btnIzinRaporla.TabIndex = 11;
+            this.btnIzinRaporla.Text = "RAPORLA";
+            this.btnIzinRaporla.UseVisualStyleBackColor = true;
+            this.btnIzinRaporla.Click += new System.EventHandler(this.btnIzinRaporla_Click);
+            // 
             // formAdminOgrenciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1832, 605);
+            this.Controls.Add(this.btnIzinRaporla);
+            this.Controls.Add(this.btnOgrenciRaporla);
             this.Controls.Add(this.btnIzinSil);
             this.Controls.Add(this.btnIzinEkle);
             this.Controls.Add(this.label12);
@@ -488,5 +512,7 @@
         private System.Windows.Forms.Button btnIzinSil;
         private System.Windows.Forms.TextBox txtKullaniciID;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnOgrenciRaporla;
+        private System.Windows.Forms.Button btnIzinRaporla;
     }
 }

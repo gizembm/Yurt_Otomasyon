@@ -44,5 +44,19 @@ namespace YurtKayitProje
             this.Hide();
             personelGiris.ShowDialog();
         }
+
+        private void btnRaporlama_Click(object sender, EventArgs e)
+        {
+            formSilinenOgrenciRaporlama raporlama = new formSilinenOgrenciRaporlama();  
+            this.Hide();
+            raporlama.ShowDialog();
+        }
+
+        private void btnSistemAyarlari_Click(object sender, EventArgs e)
+        {
+            formSistemAyarlari sistem = new formSistemAyarlari();
+            this.Hide();
+            sistem.ShowDialog();
+        }
     }
 }

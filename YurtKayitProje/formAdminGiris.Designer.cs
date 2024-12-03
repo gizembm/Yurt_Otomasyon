@@ -63,6 +63,7 @@
             this.btnRaporlama.TabIndex = 3;
             this.btnRaporlama.Text = "RAPORLAMA";
             this.btnRaporlama.UseVisualStyleBackColor = true;
+            this.btnRaporlama.Click += new System.EventHandler(this.btnRaporlama_Click);
             // 
             // btnSistemAyarlari
             // 
@@ -72,6 +73,7 @@
             this.btnSistemAyarlari.TabIndex = 5;
             this.btnSistemAyarlari.Text = "SİSTEM AYARLARI";
             this.btnSistemAyarlari.UseVisualStyleBackColor = true;
+            this.btnSistemAyarlari.Click += new System.EventHandler(this.btnSistemAyarlari_Click);
             // 
             // btnYetkilendirme
             // 
