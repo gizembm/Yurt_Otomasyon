@@ -140,5 +140,12 @@ namespace YurtKayitProje
                 }
             }
         }
+
+        private void pbgeriDon_Click(object sender, EventArgs e)
+        {
+            formPersonelGiris giris = new formPersonelGiris();
+            this.Hide();
+            giris.ShowDialog();
+        }
     }
 }

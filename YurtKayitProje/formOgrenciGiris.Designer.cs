@@ -35,38 +35,45 @@
             // 
             // btnKisiselBilgiler
             // 
+            this.btnKisiselBilgiler.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnKisiselBilgiler.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKisiselBilgiler.Location = new System.Drawing.Point(52, 179);
             this.btnKisiselBilgiler.Name = "btnKisiselBilgiler";
             this.btnKisiselBilgiler.Size = new System.Drawing.Size(228, 85);
             this.btnKisiselBilgiler.TabIndex = 0;
             this.btnKisiselBilgiler.Text = "KİŞİSEL BİLGİLER";
-            this.btnKisiselBilgiler.UseVisualStyleBackColor = true;
+            this.btnKisiselBilgiler.UseVisualStyleBackColor = false;
             this.btnKisiselBilgiler.Click += new System.EventHandler(this.btnKisiselBilgiler_Click);
             // 
             // btnIzinAl
             // 
+            this.btnIzinAl.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnIzinAl.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnIzinAl.Location = new System.Drawing.Point(590, 179);
             this.btnIzinAl.Name = "btnIzinAl";
             this.btnIzinAl.Size = new System.Drawing.Size(228, 85);
             this.btnIzinAl.TabIndex = 0;
             this.btnIzinAl.Text = "İZİN AL";
-            this.btnIzinAl.UseVisualStyleBackColor = true;
+            this.btnIzinAl.UseVisualStyleBackColor = false;
             this.btnIzinAl.Click += new System.EventHandler(this.btnIzinAl_Click);
             // 
             // btnOdemeYap
             // 
+            this.btnOdemeYap.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnOdemeYap.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOdemeYap.Location = new System.Drawing.Point(322, 179);
             this.btnOdemeYap.Name = "btnOdemeYap";
             this.btnOdemeYap.Size = new System.Drawing.Size(228, 85);
             this.btnOdemeYap.TabIndex = 0;
             this.btnOdemeYap.Text = "ÖDEME YAP";
-            this.btnOdemeYap.UseVisualStyleBackColor = true;
+            this.btnOdemeYap.UseVisualStyleBackColor = false;
             this.btnOdemeYap.Click += new System.EventHandler(this.btnOdemeYap_Click);
             // 
             // formOgrenciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(886, 468);
             this.Controls.Add(this.btnOdemeYap);
             this.Controls.Add(this.btnIzinAl);

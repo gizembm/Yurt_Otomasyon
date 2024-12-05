@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAdminOgrenciGiris));
             this.dgvOgrenciListele = new System.Windows.Forms.DataGridView();
             this.dgvIzin = new System.Windows.Forms.DataGridView();
             this.txtTcNo = new System.Windows.Forms.TextBox();
-            this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAdres = new System.Windows.Forms.TextBox();
             this.txtKanGrubu = new System.Windows.Forms.TextBox();
@@ -67,12 +67,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnOgrenciRaporla = new System.Windows.Forms.Button();
             this.btnIzinRaporla = new System.Windows.Forms.Button();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.pbgeriDon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOgrenciListele)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIzin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbgeriDon)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvOgrenciListele
             // 
+            this.dgvOgrenciListele.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvOgrenciListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOgrenciListele.Location = new System.Drawing.Point(295, 47);
             this.dgvOgrenciListele.Name = "dgvOgrenciListele";
@@ -80,190 +84,204 @@
             this.dgvOgrenciListele.RowTemplate.Height = 24;
             this.dgvOgrenciListele.Size = new System.Drawing.Size(572, 417);
             this.dgvOgrenciListele.TabIndex = 0;
+            this.dgvOgrenciListele.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOgrenciListele_CellClick);
             // 
             // dgvIzin
             // 
+            this.dgvIzin.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvIzin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvIzin.Location = new System.Drawing.Point(1152, 47);
             this.dgvIzin.Name = "dgvIzin";
             this.dgvIzin.RowHeadersWidth = 51;
             this.dgvIzin.RowTemplate.Height = 24;
-            this.dgvIzin.Size = new System.Drawing.Size(650, 417);
+            this.dgvIzin.Size = new System.Drawing.Size(717, 417);
             this.dgvIzin.TabIndex = 0;
             // 
             // txtTcNo
             // 
-            this.txtTcNo.Location = new System.Drawing.Point(104, 47);
+            this.txtTcNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTcNo.Location = new System.Drawing.Point(116, 47);
             this.txtTcNo.Name = "txtTcNo";
-            this.txtTcNo.Size = new System.Drawing.Size(162, 22);
+            this.txtTcNo.Size = new System.Drawing.Size(162, 25);
             this.txtTcNo.TabIndex = 1;
             this.txtTcNo.Click += new System.EventHandler(this.txtTcNo_Click);
             this.txtTcNo.TextChanged += new System.EventHandler(this.txtTcNo_TextChanged);
             // 
-            // txtAd
-            // 
-            this.txtAd.Location = new System.Drawing.Point(104, 88);
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(162, 22);
-            this.txtAd.TabIndex = 1;
-            this.txtAd.TextChanged += new System.EventHandler(this.txtAd_TextChanged);
-            // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(104, 131);
+            this.txtSoyad.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSoyad.Location = new System.Drawing.Point(116, 131);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(162, 22);
+            this.txtSoyad.Size = new System.Drawing.Size(162, 25);
             this.txtSoyad.TabIndex = 1;
             this.txtSoyad.Click += new System.EventHandler(this.txtSoyad_Click);
             this.txtSoyad.TextChanged += new System.EventHandler(this.txtSoyad_TextChanged);
             // 
             // txtAdres
             // 
-            this.txtAdres.Location = new System.Drawing.Point(104, 170);
+            this.txtAdres.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAdres.Location = new System.Drawing.Point(116, 170);
             this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(162, 22);
+            this.txtAdres.Size = new System.Drawing.Size(162, 25);
             this.txtAdres.TabIndex = 1;
             this.txtAdres.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtKanGrubu
             // 
-            this.txtKanGrubu.Location = new System.Drawing.Point(104, 203);
+            this.txtKanGrubu.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKanGrubu.Location = new System.Drawing.Point(116, 203);
             this.txtKanGrubu.Name = "txtKanGrubu";
-            this.txtKanGrubu.Size = new System.Drawing.Size(162, 22);
+            this.txtKanGrubu.Size = new System.Drawing.Size(162, 25);
             this.txtKanGrubu.TabIndex = 1;
             // 
             // txtMailAdresi
             // 
-            this.txtMailAdresi.Location = new System.Drawing.Point(104, 244);
+            this.txtMailAdresi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtMailAdresi.Location = new System.Drawing.Point(116, 241);
             this.txtMailAdresi.Name = "txtMailAdresi";
-            this.txtMailAdresi.Size = new System.Drawing.Size(162, 22);
+            this.txtMailAdresi.Size = new System.Drawing.Size(162, 25);
             this.txtMailAdresi.TabIndex = 1;
             this.txtMailAdresi.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTelNo
             // 
-            this.txtTelNo.Location = new System.Drawing.Point(104, 326);
+            this.txtTelNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTelNo.Location = new System.Drawing.Point(116, 326);
             this.txtTelNo.Name = "txtTelNo";
-            this.txtTelNo.Size = new System.Drawing.Size(162, 22);
+            this.txtTelNo.Size = new System.Drawing.Size(162, 25);
             this.txtTelNo.TabIndex = 1;
             this.txtTelNo.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtVeliTelNo
             // 
-            this.txtVeliTelNo.Location = new System.Drawing.Point(104, 370);
+            this.txtVeliTelNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtVeliTelNo.Location = new System.Drawing.Point(116, 370);
             this.txtVeliTelNo.Name = "txtVeliTelNo";
-            this.txtVeliTelNo.Size = new System.Drawing.Size(162, 22);
+            this.txtVeliTelNo.Size = new System.Drawing.Size(162, 25);
             this.txtVeliTelNo.TabIndex = 1;
             this.txtVeliTelNo.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(45, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 16);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "TC No";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(51, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 16);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "İsim";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(36, 134);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
+            this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Soyisim";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(39, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.Size = new System.Drawing.Size(48, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Adres";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(26, 209);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 16);
+            this.label5.Size = new System.Drawing.Size(80, 17);
             this.label5.TabIndex = 2;
             this.label5.Text = "Kan Grubu";
             // 
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(26, 244);
+            this.label.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label.Location = new System.Drawing.Point(12, 244);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(74, 16);
+            this.label.Size = new System.Drawing.Size(85, 17);
             this.label.TabIndex = 2;
             this.label.Text = "Mail Adresi";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(0, 376);
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(1, 378);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 16);
+            this.label7.Size = new System.Drawing.Size(109, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "Veli Telefon No";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 332);
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(14, 334);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 16);
+            this.label8.Size = new System.Drawing.Size(80, 17);
             this.label8.TabIndex = 2;
             this.label8.Text = "Telefon No";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 290);
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(1, 290);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 16);
+            this.label9.Size = new System.Drawing.Size(97, 17);
             this.label9.TabIndex = 2;
             this.label9.Text = "Doğum Tarihi";
             // 
             // dtpDogumTarih
             // 
-            this.dtpDogumTarih.Location = new System.Drawing.Point(104, 284);
+            this.dtpDogumTarih.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpDogumTarih.Location = new System.Drawing.Point(116, 284);
             this.dtpDogumTarih.Name = "dtpDogumTarih";
-            this.dtpDogumTarih.Size = new System.Drawing.Size(162, 22);
+            this.dtpDogumTarih.Size = new System.Drawing.Size(162, 25);
             this.dtpDogumTarih.TabIndex = 3;
             this.dtpDogumTarih.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // txtOdaNo
             // 
-            this.txtOdaNo.Location = new System.Drawing.Point(104, 409);
+            this.txtOdaNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOdaNo.Location = new System.Drawing.Point(116, 409);
             this.txtOdaNo.Name = "txtOdaNo";
-            this.txtOdaNo.Size = new System.Drawing.Size(162, 22);
+            this.txtOdaNo.Size = new System.Drawing.Size(162, 25);
             this.txtOdaNo.TabIndex = 1;
             this.txtOdaNo.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(26, 415);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 16);
+            this.label6.Size = new System.Drawing.Size(58, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "Oda No";
             // 
             // btnEkle
             // 
+            this.btnEkle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.Location = new System.Drawing.Point(311, 484);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(130, 32);
@@ -274,6 +292,7 @@
             // 
             // btnSil
             // 
+            this.btnSil.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.Location = new System.Drawing.Point(447, 484);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(130, 32);
@@ -284,6 +303,7 @@
             // 
             // btnGuncelle
             // 
+            this.btnGuncelle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGuncelle.Location = new System.Drawing.Point(583, 484);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(130, 32);
@@ -294,6 +314,7 @@
             // 
             // btnListele
             // 
+            this.btnListele.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnListele.Location = new System.Drawing.Point(719, 484);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(130, 32);
@@ -321,50 +342,56 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.Location = new System.Drawing.Point(947, 217);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 16);
+            this.label10.Size = new System.Drawing.Size(141, 17);
             this.label10.TabIndex = 6;
             this.label10.Text = "İzin Başlangıç Tarihi";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.Location = new System.Drawing.Point(963, 277);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 16);
+            this.label11.Size = new System.Drawing.Size(109, 17);
             this.label11.TabIndex = 6;
             this.label11.Text = "İzin Bitiş Tarihi";
             // 
             // txtOgrNo
             // 
+            this.txtOgrNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrNo.Location = new System.Drawing.Point(990, 167);
             this.txtOgrNo.Name = "txtOgrNo";
-            this.txtOgrNo.Size = new System.Drawing.Size(125, 22);
+            this.txtOgrNo.Size = new System.Drawing.Size(125, 25);
             this.txtOgrNo.TabIndex = 7;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.Location = new System.Drawing.Point(909, 173);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 16);
+            this.label12.Size = new System.Drawing.Size(84, 17);
             this.label12.TabIndex = 8;
             this.label12.Text = "Öğrenci No";
             // 
             // btnIzınListele
             // 
-            this.btnIzınListele.Location = new System.Drawing.Point(1672, 470);
+            this.btnIzınListele.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIzınListele.Location = new System.Drawing.Point(1701, 470);
             this.btnIzınListele.Name = "btnIzınListele";
-            this.btnIzınListele.Size = new System.Drawing.Size(130, 32);
+            this.btnIzınListele.Size = new System.Drawing.Size(168, 32);
             this.btnIzınListele.TabIndex = 4;
-            this.btnIzınListele.Text = "İzinleri Listele";
+            this.btnIzınListele.Text = "İZİNLERİ LİSTELE";
             this.btnIzınListele.UseVisualStyleBackColor = true;
             this.btnIzınListele.Click += new System.EventHandler(this.btnIzinListele_Click);
             // 
             // btnIzinEkle
             // 
-            this.btnIzinEkle.Location = new System.Drawing.Point(1548, 470);
+            this.btnIzinEkle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIzinEkle.Location = new System.Drawing.Point(1577, 470);
             this.btnIzinEkle.Name = "btnIzinEkle";
             this.btnIzinEkle.Size = new System.Drawing.Size(118, 32);
             this.btnIzinEkle.TabIndex = 9;
@@ -374,36 +401,40 @@
             // 
             // btnIzinSil
             // 
-            this.btnIzinSil.Location = new System.Drawing.Point(1424, 470);
+            this.btnIzinSil.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIzinSil.Location = new System.Drawing.Point(1453, 470);
             this.btnIzinSil.Name = "btnIzinSil";
             this.btnIzinSil.Size = new System.Drawing.Size(118, 32);
             this.btnIzinSil.TabIndex = 10;
-            this.btnIzinSil.Text = "Sil";
+            this.btnIzinSil.Text = "SİL";
             this.btnIzinSil.UseVisualStyleBackColor = true;
             this.btnIzinSil.Click += new System.EventHandler(this.btnIzinSil_Click);
             // 
             // txtKullaniciID
             // 
-            this.txtKullaniciID.Location = new System.Drawing.Point(104, 442);
+            this.txtKullaniciID.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKullaniciID.Location = new System.Drawing.Point(116, 442);
             this.txtKullaniciID.Name = "txtKullaniciID";
-            this.txtKullaniciID.Size = new System.Drawing.Size(162, 22);
+            this.txtKullaniciID.Size = new System.Drawing.Size(162, 25);
             this.txtKullaniciID.TabIndex = 1;
             this.txtKullaniciID.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(26, 448);
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(12, 450);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 16);
+            this.label13.Size = new System.Drawing.Size(87, 17);
             this.label13.TabIndex = 2;
             this.label13.Text = "Kullanıcı ID";
             // 
             // btnOgrenciRaporla
             // 
-            this.btnOgrenciRaporla.Location = new System.Drawing.Point(764, 18);
+            this.btnOgrenciRaporla.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOgrenciRaporla.Location = new System.Drawing.Point(754, 14);
             this.btnOgrenciRaporla.Name = "btnOgrenciRaporla";
-            this.btnOgrenciRaporla.Size = new System.Drawing.Size(103, 23);
+            this.btnOgrenciRaporla.Size = new System.Drawing.Size(113, 29);
             this.btnOgrenciRaporla.TabIndex = 11;
             this.btnOgrenciRaporla.Text = "RAPORLA";
             this.btnOgrenciRaporla.UseVisualStyleBackColor = true;
@@ -411,19 +442,43 @@
             // 
             // btnIzinRaporla
             // 
-            this.btnIzinRaporla.Location = new System.Drawing.Point(1699, 18);
+            this.btnIzinRaporla.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIzinRaporla.Location = new System.Drawing.Point(1740, 14);
             this.btnIzinRaporla.Name = "btnIzinRaporla";
-            this.btnIzinRaporla.Size = new System.Drawing.Size(103, 23);
+            this.btnIzinRaporla.Size = new System.Drawing.Size(129, 30);
             this.btnIzinRaporla.TabIndex = 11;
             this.btnIzinRaporla.Text = "RAPORLA";
             this.btnIzinRaporla.UseVisualStyleBackColor = true;
             this.btnIzinRaporla.Click += new System.EventHandler(this.btnIzinRaporla_Click);
             // 
+            // txtAd
+            // 
+            this.txtAd.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAd.Location = new System.Drawing.Point(116, 94);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(162, 25);
+            this.txtAd.TabIndex = 1;
+            this.txtAd.TextChanged += new System.EventHandler(this.txtAd_TextChanged);
+            // 
+            // pbgeriDon
+            // 
+            this.pbgeriDon.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pbgeriDon.Image = ((System.Drawing.Image)(resources.GetObject("pbgeriDon.Image")));
+            this.pbgeriDon.Location = new System.Drawing.Point(15, 11);
+            this.pbgeriDon.Name = "pbgeriDon";
+            this.pbgeriDon.Size = new System.Drawing.Size(46, 30);
+            this.pbgeriDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbgeriDon.TabIndex = 12;
+            this.pbgeriDon.TabStop = false;
+            this.pbgeriDon.Click += new System.EventHandler(this.pbgeriDon_Click);
+            // 
             // formAdminOgrenciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1832, 605);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1881, 527);
+            this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnIzinRaporla);
             this.Controls.Add(this.btnOgrenciRaporla);
             this.Controls.Add(this.btnIzinSil);
@@ -468,6 +523,7 @@
             this.Load += new System.EventHandler(this.formAdminOgrenciGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOgrenciListele)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIzin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbgeriDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,7 +534,6 @@
         private System.Windows.Forms.DataGridView dgvOgrenciListele;
         private System.Windows.Forms.DataGridView dgvIzin;
         private System.Windows.Forms.TextBox txtTcNo;
-        private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtAdres;
         private System.Windows.Forms.TextBox txtKanGrubu;
@@ -514,5 +569,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnOgrenciRaporla;
         private System.Windows.Forms.Button btnIzinRaporla;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.PictureBox pbgeriDon;
     }
 }

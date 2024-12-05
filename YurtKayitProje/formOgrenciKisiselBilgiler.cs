@@ -96,6 +96,13 @@ namespace YurtKayitProje
                 baglanti.Close();
             }
         }
+
+        private void pbgeriDon_Click(object sender, EventArgs e)
+        {
+            formOgrenciGiris giris = new formOgrenciGiris();
+            this.Hide();
+            giris.ShowDialog();
+        }
     }
 
     

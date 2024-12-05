@@ -205,11 +205,12 @@ C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formOgrenciKi
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formOgrenciOdeme.resources
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formPersonelGiris.resources
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formSilinenOgrenciRaporlama.resources
-C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formSistemAyarlari.resources
-C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formYetkilendirme.resources
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.Properties.Resources.resources
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.csproj.GenerateResource.cache
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.csproj.CoreCompileInputs.cache
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.csproj.CopyComplete
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.exe
 C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.pdb
+C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formAdminSistemAyarlari.resources
+C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formAdminYetkilendirme.resources
+C:\Users\Asus\source\repos\YurtKayitProje\obj\Debug\YurtKayitProje.formAdminYatakDurumRaporu.resources

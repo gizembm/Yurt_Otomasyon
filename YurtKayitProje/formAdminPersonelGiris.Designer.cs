@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAdminPersonelGiris));
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dgvPeronelListele = new System.Windows.Forms.DataGridView();
+            this.dgvPersonelListele = new System.Windows.Forms.DataGridView();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnListele = new System.Windows.Forms.Button();
@@ -46,7 +47,9 @@
             this.txtSorumluOda = new System.Windows.Forms.TextBox();
             this.txtKullaniciID = new System.Windows.Forms.TextBox();
             this.btnRaporla = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPeronelListele)).BeginInit();
+            this.pbgeriDon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonelListele)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbgeriDon)).BeginInit();
             this.SuspendLayout();
             // 
             // txtID
@@ -66,14 +69,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(145, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 16);
+            this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID";
             // 
             // btnEkle
             // 
+            this.btnEkle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.Location = new System.Drawing.Point(647, 409);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(103, 29);
@@ -85,34 +90,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(128, 197);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(113, 196);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 16);
+            this.label3.Size = new System.Drawing.Size(80, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Telefon No";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(128, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(49, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Görev";
             // 
-            // dgvPeronelListele
+            // dgvPersonelListele
             // 
-            this.dgvPeronelListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPeronelListele.Location = new System.Drawing.Point(393, 81);
-            this.dgvPeronelListele.Name = "dgvPeronelListele";
-            this.dgvPeronelListele.RowHeadersWidth = 51;
-            this.dgvPeronelListele.RowTemplate.Height = 24;
-            this.dgvPeronelListele.Size = new System.Drawing.Size(684, 298);
-            this.dgvPeronelListele.TabIndex = 4;
-            this.dgvPeronelListele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeronelListele_CellContentClick);
+            this.dgvPersonelListele.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvPersonelListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonelListele.Location = new System.Drawing.Point(393, 81);
+            this.dgvPersonelListele.Name = "dgvPersonelListele";
+            this.dgvPersonelListele.RowHeadersWidth = 51;
+            this.dgvPersonelListele.RowTemplate.Height = 24;
+            this.dgvPersonelListele.Size = new System.Drawing.Size(684, 298);
+            this.dgvPersonelListele.TabIndex = 4;
+            this.dgvPersonelListele.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonelListele_CellClick_1);
+            this.dgvPersonelListele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonelListele_CellContentClick);
             // 
             // btnSil
             // 
+            this.btnSil.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.Location = new System.Drawing.Point(756, 409);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(103, 29);
@@ -123,6 +133,7 @@
             // 
             // btnGuncelle
             // 
+            this.btnGuncelle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGuncelle.Location = new System.Drawing.Point(865, 409);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(103, 29);
@@ -133,6 +144,7 @@
             // 
             // btnListele
             // 
+            this.btnListele.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnListele.Location = new System.Drawing.Point(974, 409);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(103, 29);
@@ -151,9 +163,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(130, 148);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(113, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 16);
+            this.label5.Size = new System.Drawing.Size(70, 17);
             this.label5.TabIndex = 2;
             this.label5.Text = "Ad-Soyad";
             // 
@@ -174,18 +187,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 284);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(103, 289);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 16);
+            this.label2.Size = new System.Drawing.Size(93, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sorumlu Oda";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(130, 335);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(113, 337);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 16);
+            this.label6.Size = new System.Drawing.Size(83, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "KullaniciID";
             // 
@@ -205,6 +220,7 @@
             // 
             // btnRaporla
             // 
+            this.btnRaporla.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRaporla.Location = new System.Drawing.Point(958, 45);
             this.btnRaporla.Name = "btnRaporla";
             this.btnRaporla.Size = new System.Drawing.Size(119, 30);
@@ -213,14 +229,28 @@
             this.btnRaporla.UseVisualStyleBackColor = true;
             this.btnRaporla.Click += new System.EventHandler(this.btnRaporla_Click);
             // 
+            // pbgeriDon
+            // 
+            this.pbgeriDon.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pbgeriDon.Image = ((System.Drawing.Image)(resources.GetObject("pbgeriDon.Image")));
+            this.pbgeriDon.Location = new System.Drawing.Point(12, 12);
+            this.pbgeriDon.Name = "pbgeriDon";
+            this.pbgeriDon.Size = new System.Drawing.Size(46, 30);
+            this.pbgeriDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbgeriDon.TabIndex = 13;
+            this.pbgeriDon.TabStop = false;
+            this.pbgeriDon.Click += new System.EventHandler(this.pbgeriDon_Click);
+            // 
             // formAdminPersonelGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1124, 495);
+            this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnRaporla);
             this.Controls.Add(this.cmbGorevAd);
-            this.Controls.Add(this.dgvPeronelListele);
+            this.Controls.Add(this.dgvPersonelListele);
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.label6);
@@ -237,9 +267,10 @@
             this.Controls.Add(this.txtAdSoyad);
             this.Controls.Add(this.txtID);
             this.Name = "formAdminPersonelGiris";
-            this.Text = "formPersonelGiris";
+            this.Text = "PERSONEL İŞLEMLERİ";
             this.Load += new System.EventHandler(this.formAdminPersonelGiris_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPeronelListele)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonelListele)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbgeriDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +284,7 @@
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dgvPeronelListele;
+        private System.Windows.Forms.DataGridView dgvPersonelListele;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnListele;
@@ -265,5 +296,8 @@
         private System.Windows.Forms.TextBox txtSorumluOda;
         private System.Windows.Forms.TextBox txtKullaniciID;
         private System.Windows.Forms.Button btnRaporla;
+        private System.Windows.Forms.PictureBox pbgeriDon;
+        
+
+        }
     }
-}

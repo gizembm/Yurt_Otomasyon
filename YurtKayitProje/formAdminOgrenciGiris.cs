@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Office.Word;
+using DocumentFormat.OpenXml.Wordprocessing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,9 @@ namespace YurtKayitProje
         public formAdminOgrenciGiris()
         {
             InitializeComponent();
+
+            this.Size = new Size(1899, 574);
+
         }
 
         private void formAdminOgrenciGiris_Load(object sender, EventArgs e)
@@ -160,7 +164,7 @@ namespace YurtKayitProje
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            string tc = txtTcNo.Text; 
+            string tc = txtTcNo.Text.Trim(); 
             string yeniAd = txtAd.Text;
             string yeniSoyad = txtSoyad.Text;
             string yeniTelNo = txtTelNo.Text;
@@ -679,6 +683,49 @@ namespace YurtKayitProje
             formAdminOgrenciIzinRaporu rapor = new formAdminOgrenciIzinRaporu();
             this.Hide();
             rapor .ShowDialog();
+        }
+
+        private void pbgeriDon_Click(object sender, EventArgs e)
+        {
+            formAdminGiris adminGiris = new formAdminGiris();
+            this.Hide();
+            adminGiris .ShowDialog();
+        }
+
+        private void dgvOgrenciListele_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // TextChanged olayını geçici olarak devre dışı bırak
+                txtTcNo.TextChanged -= txtTcNo_TextChanged;
+                txtAd.TextChanged -= txtAd_TextChanged;
+                txtSoyad.TextChanged -= txtSoyad_TextChanged;
+
+                // Seçilen satırdaki hücrelerden verileri al
+                DataGridViewRow row = dgvOgrenciListele.Rows[e.RowIndex];
+
+                
+                //TextBox'lara veri aktar
+                txtOgrNo.Text = row.Cells["ogrNo"].Value.ToString();
+                txtTcNo.Text = row.Cells["ogrTC"].Value.ToString();
+                txtAd.Text = row.Cells["ogrAd"].Value.ToString();
+                txtSoyad.Text = row.Cells["ogrSoyad"].Value.ToString();
+                txtAdres.Text = row.Cells["ogrAdres"].Value.ToString();
+                txtTelNo.Text = row.Cells["ogrTel"].Value.ToString();
+                txtMailAdresi.Text = row.Cells["ogrMail"].Value.ToString();
+                txtVeliTelNo.Text = row.Cells["ogrVeliTel"].Value.ToString();
+                txtOdaNo.Text = row.Cells["odaNo"].Value.ToString();
+                txtKanGrubu.Text = row.Cells["ogrKanGrup"].Value.ToString();
+                txtKullaniciID.Text = row.Cells["kullaniciID"].Value.ToString();
+                dtpDogumTarih.Text = row.Cells["ogrDogumTarih"].Value.ToString();
+
+                // TextChanged olayını yeniden etkinleştir
+                txtTcNo.TextChanged += txtTcNo_TextChanged;
+                txtAd.TextChanged += txtAd_TextChanged;
+                txtSoyad.TextChanged += txtSoyad_TextChanged;
+
+
+            }
         }
     }
 }

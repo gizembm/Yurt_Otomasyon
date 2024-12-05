@@ -287,6 +287,12 @@
       <DependentUpon>adminPersonelRaporlama.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="adminYatakDurumRaporu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>adminYatakDurumRaporu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="adminYetkilendirmeRapor.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -298,6 +304,12 @@
     </Compile>
     <Compile Include="formAdminPersonelRaporlama.Designer.cs">
       <DependentUpon>formAdminPersonelRaporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAdminYatakDurumRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdminYatakDurumRaporu.Designer.cs">
+      <DependentUpon>formAdminYatakDurumRaporu.cs</DependentUpon>
     </Compile>
     <Compile Include="formAdminYetkilendirmeRaporlama.cs">
       <SubType>Form</SubType>
@@ -383,17 +395,17 @@
     <Compile Include="formSilinenOgrenciRaporlama.Designer.cs">
       <DependentUpon>formSilinenOgrenciRaporlama.cs</DependentUpon>
     </Compile>
-    <Compile Include="formSistemAyarlari.cs">
+    <Compile Include="formAdminSistemAyarlari.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formSistemAyarlari.Designer.cs">
-      <DependentUpon>formSistemAyarlari.cs</DependentUpon>
+    <Compile Include="formAdminSistemAyarlari.Designer.cs">
+      <DependentUpon>formAdminSistemAyarlari.cs</DependentUpon>
     </Compile>
-    <Compile Include="formYetkilendirme.cs">
+    <Compile Include="formAdminYetkilendirme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formYetkilendirme.Designer.cs">
-      <DependentUpon>formYetkilendirme.cs</DependentUpon>
+    <Compile Include="formAdminYetkilendirme.Designer.cs">
+      <DependentUpon>formAdminYetkilendirme.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -409,12 +421,19 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>adminPersonelRaporlama.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminYatakDurumRaporu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>adminYatakDurumRaporu.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminYetkilendirmeRapor.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>adminYetkilendirmeRapor.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="formAdminPersonelRaporlama.resx">
       <DependentUpon>formAdminPersonelRaporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdminYatakDurumRaporu.resx">
+      <DependentUpon>formAdminYatakDurumRaporu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formAdminYetkilendirmeRaporlama.resx">
       <DependentUpon>formAdminYetkilendirmeRaporlama.cs</DependentUpon>
@@ -459,11 +478,11 @@
     <EmbeddedResource Include="formSilinenOgrenciRaporlama.resx">
       <DependentUpon>formSilinenOgrenciRaporlama.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formSistemAyarlari.resx">
-      <DependentUpon>formSistemAyarlari.cs</DependentUpon>
+    <EmbeddedResource Include="formAdminSistemAyarlari.resx">
+      <DependentUpon>formAdminSistemAyarlari.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formYetkilendirme.resx">
-      <DependentUpon>formYetkilendirme.cs</DependentUpon>
+    <EmbeddedResource Include="formAdminYetkilendirme.resx">
+      <DependentUpon>formAdminYetkilendirme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formOgrenciOdeme));
             this.cmbAy = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtOdenecekTutar = new System.Windows.Forms.TextBox();
             this.dgvOdemeler = new System.Windows.Forms.DataGridView();
             this.btnOde = new System.Windows.Forms.Button();
             this.btnOdemeler = new System.Windows.Forms.Button();
+            this.pbgeriDon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOdemeler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbgeriDon)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbAy
@@ -59,9 +62,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(31, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.Size = new System.Drawing.Size(115, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ödenecek Tutar";
             // 
@@ -75,6 +79,7 @@
             // 
             // dgvOdemeler
             // 
+            this.dgvOdemeler.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvOdemeler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOdemeler.Location = new System.Drawing.Point(317, 67);
             this.dgvOdemeler.Name = "dgvOdemeler";
@@ -85,6 +90,7 @@
             // 
             // btnOde
             // 
+            this.btnOde.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOde.Location = new System.Drawing.Point(164, 242);
             this.btnOde.Name = "btnOde";
             this.btnOde.Size = new System.Drawing.Size(92, 25);
@@ -95,19 +101,34 @@
             // 
             // btnOdemeler
             // 
-            this.btnOdemeler.Location = new System.Drawing.Point(680, 320);
+            this.btnOdemeler.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeler.Location = new System.Drawing.Point(660, 320);
             this.btnOdemeler.Name = "btnOdemeler";
-            this.btnOdemeler.Size = new System.Drawing.Size(113, 25);
+            this.btnOdemeler.Size = new System.Drawing.Size(133, 25);
             this.btnOdemeler.TabIndex = 4;
             this.btnOdemeler.Text = "ÖDEMELER";
             this.btnOdemeler.UseVisualStyleBackColor = true;
             this.btnOdemeler.Click += new System.EventHandler(this.btnOdemeler_Click);
             // 
+            // pbgeriDon
+            // 
+            this.pbgeriDon.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pbgeriDon.Image = ((System.Drawing.Image)(resources.GetObject("pbgeriDon.Image")));
+            this.pbgeriDon.Location = new System.Drawing.Point(12, 12);
+            this.pbgeriDon.Name = "pbgeriDon";
+            this.pbgeriDon.Size = new System.Drawing.Size(46, 30);
+            this.pbgeriDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbgeriDon.TabIndex = 13;
+            this.pbgeriDon.TabStop = false;
+            this.pbgeriDon.Click += new System.EventHandler(this.pbgeriDon_Click);
+            // 
             // formOgrenciOdeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(834, 448);
+            this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnOdemeler);
             this.Controls.Add(this.btnOde);
             this.Controls.Add(this.dgvOdemeler);
@@ -118,6 +139,7 @@
             this.Text = "formOgrenciOdeme";
             this.Load += new System.EventHandler(this.formOgrenciOdeme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOdemeler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbgeriDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +153,6 @@
         private System.Windows.Forms.DataGridView dgvOdemeler;
         private System.Windows.Forms.Button btnOde;
         private System.Windows.Forms.Button btnOdemeler;
+        private System.Windows.Forms.PictureBox pbgeriDon;
     }
 }

@@ -26,7 +26,7 @@ namespace YurtKayitProje
 
         private void btnYetkilendirme_Click(object sender, EventArgs e)
         {
-            formYetkilendirme yetkilendirme = new formYetkilendirme();
+            formAdminYetkilendirme yetkilendirme = new formAdminYetkilendirme();
             this.Hide();
             yetkilendirme.ShowDialog();
         }
@@ -54,9 +54,16 @@ namespace YurtKayitProje
 
         private void btnSistemAyarlari_Click(object sender, EventArgs e)
         {
-            formSistemAyarlari sistem = new formSistemAyarlari();
+            formAdminSistemAyarlari sistem = new formAdminSistemAyarlari();
             this.Hide();
             sistem.ShowDialog();
+        }
+
+        private void btnYatakDurum_Click(object sender, EventArgs e)
+        {
+            formAdminYatakDurumRaporu rapor = new formAdminYatakDurumRaporu();
+            this.Hide();
+            rapor.ShowDialog();
         }
     }
 }

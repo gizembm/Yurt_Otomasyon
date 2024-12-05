@@ -23,12 +23,16 @@ namespace YurtKayitProje
 
         private void formAdminOgrenciRapor_Load(object sender, EventArgs e)
         {
+
+            baglanti.Open();
             SqlDataAdapter komut = new SqlDataAdapter(@"SELECT ogrNo, ogrTC, ogrAd, ogrSoyad, ogrTel, ogrMail, ogrAdres,
                                                  ogrVeliTel,ogrDogumTarih, ogrKanGrup, odaNo, kullaniciID FROM OGRENCI", baglanti);
             komut.Fill(tablo);
             adminOgrenciRaporu rapor = new adminOgrenciRaporu();
             rapor.SetDataSource(tablo);
             crystalReportViewer1.ReportSource = rapor;
+
+            baglanti.Close();
 
         }
     }
