@@ -85,21 +85,21 @@ namespace YurtKayitProje
 
             string rol = KullaniciGirisi(kullaniciAd, sifre); // Kullanıcı girişini kontrol et
 
-            if (rol == "Admin" || rol == "admin")
+            if (rol == "admin")
             {
                 MessageBox.Show("Hoş geldiniz, Admin!", "Giriş Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 formAdminGiris adminForm = new formAdminGiris();
                 this.Hide();
                 adminForm.ShowDialog();
             }
-            else if (rol == "öğrenci" || rol == "Öğrenci")
+            else if (rol == "öğrenci")
             {
                 MessageBox.Show($"Hoş geldiniz, {txtKullanıcıAdı.Text}!", "Giriş Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 formOgrenciGiris kullanıcıForm = new formOgrenciGiris();
                 this.Hide();
                 kullanıcıForm.ShowDialog();
             }
-            else if (rol == "Personel" || rol == "personel")
+            else if (rol == "personel")
             {
                 MessageBox.Show($"Hoş geldiniz, {txtKullanıcıAdı.Text}!", "Giriş Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 formPersonelGiris personelForm = new formPersonelGiris();
@@ -130,6 +130,11 @@ namespace YurtKayitProje
         private void txtSifre_TextChanged_1(object sender, EventArgs e)
         {
             txtSifre.UseSystemPasswordChar = true;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

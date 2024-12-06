@@ -118,7 +118,7 @@
             // 
             // dgvYetkilendirmeListesi
             // 
-            this.dgvYetkilendirmeListesi.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvYetkilendirmeListesi.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvYetkilendirmeListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvYetkilendirmeListesi.Location = new System.Drawing.Point(324, 46);
             this.dgvYetkilendirmeListesi.Name = "dgvYetkilendirmeListesi";
@@ -127,9 +127,11 @@
             this.dgvYetkilendirmeListesi.Size = new System.Drawing.Size(455, 311);
             this.dgvYetkilendirmeListesi.TabIndex = 13;
             this.dgvYetkilendirmeListesi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvYetkilendirmeListesi_CellClick);
+            this.dgvYetkilendirmeListesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvYetkilendirmeListesi_CellContentClick);
             // 
             // cmbRol
             // 
+            this.cmbRol.BackColor = System.Drawing.Color.PaleTurquoise;
             this.cmbRol.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbRol.FormattingEnabled = true;
             this.cmbRol.Items.AddRange(new object[] {
@@ -183,6 +185,7 @@
             // 
             // txtSifre
             // 
+            this.txtSifre.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtSifre.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.Location = new System.Drawing.Point(110, 125);
             this.txtSifre.Name = "txtSifre";
@@ -191,6 +194,7 @@
             // 
             // txtKullanıcıId
             // 
+            this.txtKullanıcıId.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKullanıcıId.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullanıcıId.Location = new System.Drawing.Point(110, 46);
             this.txtKullanıcıId.Name = "txtKullanıcıId";
@@ -199,6 +203,7 @@
             // 
             // txtKullanıcıAd
             // 
+            this.txtKullanıcıAd.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKullanıcıAd.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullanıcıAd.Location = new System.Drawing.Point(110, 87);
             this.txtKullanıcıAd.Name = "txtKullanıcıAd";
@@ -232,8 +237,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
+            this.ClientSize = new System.Drawing.Size(800, 439);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnRaporla);
             this.Controls.Add(this.btnExport);

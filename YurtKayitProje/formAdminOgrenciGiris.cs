@@ -206,7 +206,7 @@ namespace YurtKayitProje
                 cmd.Parameters.AddWithValue("@ogrTC", tc); 
 
 
-                int result = cmd.ExecuteNonQuery();
+                int result = cmd.ExecuteNonQuery(); //eklenen satır sayısını alır
 
                 if (result > 0)
                 {
@@ -248,7 +248,7 @@ namespace YurtKayitProje
             // Eğer TextBox'ta geçerli bir değer varsa
             if (!string.IsNullOrWhiteSpace(txtTcNo.Text))
             {
-                tcNo = txtTcNo.Text.Trim(); // TextBox değerini al ve boşluklardan temizle
+                tcNo = txtTcNo.Text.Trim(); 
             }
             // Eğer TextBox boşsa, DataGridView'den seçilen TC'yi al
             else if (dgvOgrenciListele.SelectedRows.Count > 0)
@@ -292,9 +292,9 @@ namespace YurtKayitProje
                 cmd = new SqlCommand(@"DELETE FROM OGRENCI
                                      WHERE ogrTC=@ogrTC", baglanti);
 
-                cmd.Parameters.AddWithValue("@ogrTC", tcNo); // Parametreyi doğru şekilde bağlıyoruz
+                cmd.Parameters.AddWithValue("@ogrTC", tcNo); 
 
-                int result = cmd.ExecuteNonQuery(); // Sorguyu çalıştırıyoruz
+                int result = cmd.ExecuteNonQuery(); 
 
                 if (result > 0)
                 {
@@ -322,19 +322,18 @@ namespace YurtKayitProje
 
         private void btnIzinListele_Click(object sender, EventArgs e)
         {
-           
+            // Öğrenci numarasını al
+            string ogrNo = txtOgrNo.Text.Trim();
+
+            // Tarihleri al ve kontrol et
+            DateTime? baslangicTarihi = dtpBaslangic.Value.Date;
+            DateTime? bitisTarihi = dtpBitis.Value.Date;
+
             try
             {
                 baglanti.Open();
 
-                // Öğrenci numarasını al
-                string ogrNo = txtOgrNo.Text.Trim();
-
-                // Tarihleri al ve kontrol et
-                DateTime? baslangicTarihi = dtpBaslangic.Value.Date;
-                DateTime? bitisTarihi = dtpBitis.Value.Date;
-
-                // Dinamik sorguyu oluştur
+          
                 string query = @"SELECT baslangıcTarih, bitisTarih, kalanIzin, ogrNo 
                                  FROM IZIN 
                                  WHERE ogrNo = @ogrNo";
@@ -386,7 +385,7 @@ namespace YurtKayitProje
 
             try
             {
-                // Öğrencinin TC numarasını alın
+                
                 int ogrenciNo = int.Parse(txtOgrNo.Text);
                 
 

@@ -73,13 +73,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(886, 468);
             this.Controls.Add(this.btnOdemeYap);
             this.Controls.Add(this.btnIzinAl);
             this.Controls.Add(this.btnKisiselBilgiler);
             this.Name = "formOgrenciGiris";
             this.Text = "formOgrenciGiris";
+            this.Load += new System.EventHandler(this.formOgrenciGiris_Load);
             this.ResumeLayout(false);
 
         }

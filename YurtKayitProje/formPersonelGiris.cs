@@ -30,7 +30,6 @@ namespace YurtKayitProje
             {
                 baglanti.Open();
                 SqlCommand komut = new SqlCommand(@"SELECT 
-                                                  
                                                  P.personelAdSoyad, 
                                                  P.personelTel, 
                                                  G.gorevAd
@@ -107,14 +106,18 @@ namespace YurtKayitProje
 
 
                 SqlCommand cmd = new SqlCommand(@"SELECT 
-                                                 O.odaNo,
-                                                 O.odaKapasite,
-                                                 P.personelID
-                                                 FROM ODALAR O 
-                                                 JOIN
-                                                 PERSONEL P 
-                                                 ON O.PersonelID = P.PersonelID
-												 WHERE P.kullaniciID  = @kullaniciID;", baglanti);
+                                                      G.ogrAd AS OgrenciAdi,
+                                                      G.ogrSoyad AS OgrenciSoyadi,
+                                                      O.odaNo AS OdaNumarasi,
+                                                      O.odaKapasite AS OdaKapasitesi 
+                                                  FROM 
+                                                      PERSONEL P
+                                                  JOIN 
+                                                      ODALAR O ON P.personelID = O.personelID
+                                                  JOIN 
+                                                      OGRENCI G ON O.odaNo = G.odaNo
+                                                  WHERE 
+                                                      P.kullaniciID = @kullaniciID;", baglanti);
 
                 cmd.Parameters.AddWithValue("@kullaniciID", formGirisEkrani.kullaniciID);
 

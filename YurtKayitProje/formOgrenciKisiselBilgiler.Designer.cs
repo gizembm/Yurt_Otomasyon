@@ -156,6 +156,7 @@
             // 
             // txtTcNo
             // 
+            this.txtTcNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTcNo.Location = new System.Drawing.Point(182, 91);
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.Size = new System.Drawing.Size(239, 22);
@@ -163,6 +164,7 @@
             // 
             // txtAd
             // 
+            this.txtAd.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAd.Location = new System.Drawing.Point(182, 119);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(239, 22);
@@ -170,6 +172,7 @@
             // 
             // txtSoyad
             // 
+            this.txtSoyad.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtSoyad.Location = new System.Drawing.Point(182, 152);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(239, 22);
@@ -177,6 +180,7 @@
             // 
             // txtTelNo
             // 
+            this.txtTelNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTelNo.Location = new System.Drawing.Point(182, 180);
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(239, 22);
@@ -184,6 +188,7 @@
             // 
             // txtMail
             // 
+            this.txtMail.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtMail.Location = new System.Drawing.Point(180, 208);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(239, 22);
@@ -191,6 +196,7 @@
             // 
             // txtVeliTel
             // 
+            this.txtVeliTel.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtVeliTel.Location = new System.Drawing.Point(182, 244);
             this.txtVeliTel.Name = "txtVeliTel";
             this.txtVeliTel.Size = new System.Drawing.Size(239, 22);
@@ -198,6 +204,7 @@
             // 
             // txtAdres
             // 
+            this.txtAdres.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAdres.Location = new System.Drawing.Point(182, 351);
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(239, 22);
@@ -205,13 +212,15 @@
             // 
             // txtOdaNo
             // 
-            this.txtOdaNo.Location = new System.Drawing.Point(182, 394);
+            this.txtOdaNo.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txtOdaNo.Location = new System.Drawing.Point(182, 395);
             this.txtOdaNo.Name = "txtOdaNo";
             this.txtOdaNo.Size = new System.Drawing.Size(239, 22);
             this.txtOdaNo.TabIndex = 1;
             // 
             // txtKanGrup
             // 
+            this.txtKanGrup.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKanGrup.Location = new System.Drawing.Point(182, 320);
             this.txtKanGrup.Name = "txtKanGrup";
             this.txtKanGrup.Size = new System.Drawing.Size(239, 22);
@@ -251,7 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(538, 504);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.dtpDogumTarih);

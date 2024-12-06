@@ -74,7 +74,7 @@ namespace YurtKayitProje
             {
                 baglanti.Open();
 
-                // KULLANICILAR tablosundaki verileri al
+                
                 SqlCommand cmd = new SqlCommand("SELECT * FROM KULLANICI WHERE rol<> 'admin'", baglanti);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -103,7 +103,7 @@ namespace YurtKayitProje
             int kullaniciID = Convert.ToInt32(txtKullanıcıId.Text); 
             string yeniKullaniciAd = txtKullanıcıAd.Text;
             string yeniSifre = txtSifre.Text;
-            string yeniRol = cmbRol.SelectedItem.ToString(); // cmbRol, rol seçim kutusu
+            string yeniRol = cmbRol.SelectedItem.ToString(); 
 
             try
             {
@@ -361,6 +361,11 @@ namespace YurtKayitProje
                 
 
             }
+        }
+
+        private void dgvYetkilendirmeListesi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

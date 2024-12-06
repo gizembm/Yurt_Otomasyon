@@ -84,7 +84,7 @@ namespace YurtKayitProje
                 getOgrNoCommand.Parameters.AddWithValue("@kullaniciID", formGirisEkrani.kullaniciID);
 
                 baglanti.Open();
-                string ogrNo = getOgrNoCommand.ExecuteScalar()?.ToString();
+                string ogrNo = getOgrNoCommand.ExecuteScalar()?.ToString(); //tek bir değer alınır Ve stringe dönüştürülür. NULL ise direk NULL döner
 
                 if (string.IsNullOrEmpty(ogrNo))
                 {

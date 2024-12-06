@@ -79,6 +79,7 @@
             // 
             // txtServer
             // 
+            this.txtServer.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtServer.Location = new System.Drawing.Point(132, 106);
             this.txtServer.Name = "txtServer";
             this.txtServer.Size = new System.Drawing.Size(181, 22);
@@ -87,6 +88,7 @@
             // 
             // txtDatabase
             // 
+            this.txtDatabase.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtDatabase.Location = new System.Drawing.Point(132, 134);
             this.txtDatabase.Name = "txtDatabase";
             this.txtDatabase.Size = new System.Drawing.Size(181, 22);
@@ -95,6 +97,7 @@
             // 
             // txtPath
             // 
+            this.txtPath.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtPath.Location = new System.Drawing.Point(133, 166);
             this.txtPath.Name = "txtPath";
             this.txtPath.Size = new System.Drawing.Size(181, 22);
@@ -113,13 +116,14 @@
             // 
             // btnPath
             // 
+            this.btnPath.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnPath.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnPath.Location = new System.Drawing.Point(320, 166);
             this.btnPath.Name = "btnPath";
             this.btnPath.Size = new System.Drawing.Size(39, 22);
             this.btnPath.TabIndex = 2;
             this.btnPath.Text = "...";
-            this.btnPath.UseVisualStyleBackColor = true;
+            this.btnPath.UseVisualStyleBackColor = false;
             this.btnPath.Click += new System.EventHandler(this.btnPath_Click);
             // 
             // btnRestore
@@ -137,7 +141,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(405, 157);
+            this.label4.Location = new System.Drawing.Point(405, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 34);
             this.label4.TabIndex = 0;
@@ -145,6 +149,7 @@
             // 
             // txtPathRestore
             // 
+            this.txtPathRestore.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtPathRestore.Location = new System.Drawing.Point(560, 157);
             this.txtPathRestore.Name = "txtPathRestore";
             this.txtPathRestore.Size = new System.Drawing.Size(181, 22);
@@ -152,13 +157,14 @@
             // 
             // btnPathRestore
             // 
+            this.btnPathRestore.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnPathRestore.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnPathRestore.Location = new System.Drawing.Point(747, 157);
             this.btnPathRestore.Name = "btnPathRestore";
             this.btnPathRestore.Size = new System.Drawing.Size(39, 22);
             this.btnPathRestore.TabIndex = 2;
             this.btnPathRestore.Text = "...";
-            this.btnPathRestore.UseVisualStyleBackColor = true;
+            this.btnPathRestore.UseVisualStyleBackColor = false;
             this.btnPathRestore.Click += new System.EventHandler(this.btnPathRestore_Click);
             // 
             // openFileDialog1
@@ -181,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(809, 452);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnRestore);

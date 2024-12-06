@@ -62,6 +62,7 @@
             // 
             // txtSifre
             // 
+            this.txtSifre.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtSifre.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.Location = new System.Drawing.Point(338, 215);
             this.txtSifre.Name = "txtSifre";
@@ -71,6 +72,7 @@
             // 
             // txtKullanıcıAdı
             // 
+            this.txtKullanıcıAdı.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKullanıcıAdı.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullanıcıAdı.Location = new System.Drawing.Point(338, 160);
             this.txtKullanıcıAdı.Name = "txtKullanıcıAdı";
@@ -101,18 +103,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label3.Location = new System.Drawing.Point(100, 81);
+            this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label3.Location = new System.Drawing.Point(77, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(630, 32);
             this.label3.TabIndex = 17;
             this.label3.Text = "HZSG ÖZEL YURT SİSTEMİNE HOŞGELDİNİZ!\r\n";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // formGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbSifreGoster);

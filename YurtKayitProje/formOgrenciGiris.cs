@@ -37,5 +37,10 @@ namespace YurtKayitProje
             this.Hide();
             odeme.ShowDialog();
         }
+
+        private void formOgrenciGiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

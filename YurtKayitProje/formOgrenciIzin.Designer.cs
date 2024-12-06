@@ -115,7 +115,7 @@
             // 
             // dgvIzin
             // 
-            this.dgvIzin.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvIzin.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvIzin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvIzin.Location = new System.Drawing.Point(314, 58);
             this.dgvIzin.Name = "dgvIzin";
@@ -140,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1157, 546);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnIzinSil);

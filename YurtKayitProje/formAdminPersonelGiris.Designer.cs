@@ -54,6 +54,7 @@
             // 
             // txtID
             // 
+            this.txtID.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtID.Location = new System.Drawing.Point(204, 101);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(146, 22);
@@ -61,6 +62,7 @@
             // 
             // txtTel
             // 
+            this.txtTel.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTel.Location = new System.Drawing.Point(204, 194);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(146, 22);
@@ -109,7 +111,7 @@
             // 
             // dgvPersonelListele
             // 
-            this.dgvPersonelListele.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvPersonelListele.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvPersonelListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPersonelListele.Location = new System.Drawing.Point(393, 81);
             this.dgvPersonelListele.Name = "dgvPersonelListele";
@@ -155,6 +157,7 @@
             // 
             // txtAdSoyad
             // 
+            this.txtAdSoyad.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAdSoyad.Location = new System.Drawing.Point(204, 145);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(146, 22);
@@ -172,6 +175,7 @@
             // 
             // cmbGorevAd
             // 
+            this.cmbGorevAd.BackColor = System.Drawing.Color.PaleTurquoise;
             this.cmbGorevAd.FormattingEnabled = true;
             this.cmbGorevAd.Items.AddRange(new object[] {
             "TEMİZLİKÇİ",
@@ -206,6 +210,7 @@
             // 
             // txtSorumluOda
             // 
+            this.txtSorumluOda.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtSorumluOda.Location = new System.Drawing.Point(204, 284);
             this.txtSorumluOda.Name = "txtSorumluOda";
             this.txtSorumluOda.Size = new System.Drawing.Size(146, 22);
@@ -213,6 +218,7 @@
             // 
             // txtKullaniciID
             // 
+            this.txtKullaniciID.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKullaniciID.Location = new System.Drawing.Point(204, 332);
             this.txtKullaniciID.Name = "txtKullaniciID";
             this.txtKullaniciID.Size = new System.Drawing.Size(146, 22);
@@ -245,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1124, 495);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnRaporla);

@@ -65,6 +65,7 @@
             // 
             // txtAdSoyad
             // 
+            this.txtAdSoyad.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAdSoyad.Location = new System.Drawing.Point(133, 100);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(165, 22);
@@ -72,6 +73,7 @@
             // 
             // txtTelNo
             // 
+            this.txtTelNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTelNo.Location = new System.Drawing.Point(133, 146);
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(165, 22);
@@ -89,6 +91,7 @@
             // 
             // txtGorev
             // 
+            this.txtGorev.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtGorev.Location = new System.Drawing.Point(133, 190);
             this.txtGorev.Name = "txtGorev";
             this.txtGorev.Size = new System.Drawing.Size(165, 22);
@@ -96,7 +99,7 @@
             // 
             // dgvSorumluOdalar
             // 
-            this.dgvSorumluOdalar.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvSorumluOdalar.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvSorumluOdalar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSorumluOdalar.Location = new System.Drawing.Point(345, 59);
             this.dgvSorumluOdalar.Name = "dgvSorumluOdalar";
@@ -144,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnGorevliOdalar);

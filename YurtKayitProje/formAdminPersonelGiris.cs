@@ -125,7 +125,7 @@ namespace YurtKayitProje
             string personelAdSoyad = txtAdSoyad.Text;
             string personelTel = txtTel.Text;
             int kullaniciID = int.Parse(txtKullaniciID.Text);
-            string gorevAd = cmbGorevAd.Text; // Görev adı combobox'tan alınır
+            string gorevAd = cmbGorevAd.Text;
             string odaNo = txtSorumluOda.Text;
 
             try
@@ -162,82 +162,35 @@ namespace YurtKayitProje
                 }
 
             }
+        }
 
-                //string adSoyad = txtAdSoyad.Text.Trim();
-                //string tel = txtTel.Text.Trim();
-                //string gorevAd = cmbGorevAd.SelectedItem.ToString();
-                ////string oda = txtSorumluOda.Text.Trim();
-                ////int kullaniciID = Convert.ToInt32(txtKullaniciID.Text);
-
-                //try
-                //{
-                //    baglanti.Open();
-
-                //    SqlCommand komut = new SqlCommand(@"INSERT INTO PERSONEL (personelAdSoyad, personelTel, gorevID)
-                //                                       SELECT 
-                //                                           @adSoyad AS personelAdSoyad,
-                //                                           @tel AS personelTel,
-                //                                           G.gorevID
-                //                                       FROM 
-                //                                           GOREV G
-                //                                       WHERE 
-                //                                           G.gorevAd = @gorevAd", baglanti);
-
-
-
-                //    komut.Parameters.AddWithValue("@adSoyad", adSoyad);
-                //    komut.Parameters.AddWithValue("@tel", tel);
-                //    komut.Parameters.AddWithValue("@gorevAd", gorevAd);
-
-                //    komut.ExecuteNonQuery();
-                //    MessageBox.Show("Personel başarıyla eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show($"Hata: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
-
-                //finally
-                //{
-                //    if (baglanti.State == ConnectionState.Open)
-                //    {
-                //        baglanti.Close();
-                //    }
-                //}
-                //txtAdSoyad.Clear();
-                //txtTel.Clear();
-                //cmbGorevAd.SelectedIndex = -1;
-                //btnListele.PerformClick();
-         }
-
-            private void btnGuncelle_Click(object sender, EventArgs e)
+        private void btnGuncelle_Click(object sender, EventArgs e)
         {
+
             try
             {
-               
-                
-                    baglanti.Open();
+
+
+                baglanti.Open();
 
                 SqlCommand command = new SqlCommand("Sp_GörevVeOdayıIsmeGöreGüncelle", baglanti);
-                    
-                        command.CommandType = CommandType.StoredProcedure;
 
-                        // Parametreleri ekle
-                        command.Parameters.AddWithValue("@personelID", int.Parse(txtID.Text)); // Güncellenecek personelID
-                        command.Parameters.AddWithValue("@personelAdSoyad", txtAdSoyad.Text);
-                        command.Parameters.AddWithValue("@personelTel", txtTel.Text);
-                        command.Parameters.AddWithValue("@kullaniciID", int.Parse(txtKullaniciID.Text));
-                        command.Parameters.AddWithValue("@gorevAd", cmbGorevAd.Text); // Yeni görev adı
-                        command.Parameters.AddWithValue("@odaNo", txtSorumluOda.Text); // Yeni odaNo
+                command.CommandType = CommandType.StoredProcedure;
 
-                        // Prosedürü çalıştır
-                        command.ExecuteNonQuery();
+                // Parametreleri ekle
+                command.Parameters.AddWithValue("@personelID", int.Parse(txtID.Text));
+                command.Parameters.AddWithValue("@personelAdSoyad", txtAdSoyad.Text);
+                command.Parameters.AddWithValue("@personelTel", txtTel.Text);
+                command.Parameters.AddWithValue("@kullaniciID", int.Parse(txtKullaniciID.Text));
+                command.Parameters.AddWithValue("@gorevAd", cmbGorevAd.Text);
+                command.Parameters.AddWithValue("@odaNo", txtSorumluOda.Text);
 
-                        MessageBox.Show("Personel başarıyla güncellendi, görevi ve odası güncellendi.");
-                    
-                
+                // Prosedürü çalıştır
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Personel başarıyla güncellendi, görevi ve odası güncellendi.");
+
+
             }
             catch (Exception ex)
             {
@@ -248,72 +201,6 @@ namespace YurtKayitProje
                 baglanti.Close();
             }
 
-
-
-
-
-
-            //txtID.Enabled = false;
-            //txtAdSoyad.Enabled = false;
-            //txtKullaniciID.Enabled = false;
-
-
-
-            //string tel = txtTel.Text.Trim();
-            //string gorevAd = cmbGorevAd.SelectedItem.ToString();
-            //string odaNo = txtSorumluOda.Text;
-
-
-
-            //try
-            //{
-            //    baglanti.Open();
-            //    SqlCommand cmd = new SqlCommand(@"UPDATE P
-            //                                     SET 
-            //                                         P.personelAdSoyad = @adSoyad,
-            //                                         P.personelTel = @tel,
-            //                                         P.gorevID = G.gorevID
-            //                                     FROM 
-            //                                         PERSONEL P
-            //                                     JOIN 
-            //                                         GOREV G
-            //                                     ON 
-            //                                         G.gorevAd = @gorevAd
-            //                                     WHERE 
-            //                                         P.personelID = @personelID", baglanti);
-
-
-
-
-            //    cmd.Parameters.AddWithValue("@tel", tel);
-            //    cmd.Parameters.AddWithValue("@gorevAd", gorevAd);
-            //    cmd.Parameters.AddWithValue("@gorevAd", gorevAd);
-
-            //    int result = cmd.ExecuteNonQuery();
-
-            //    if (result > 0)
-            //    {
-            //        MessageBox.Show("Personel bilgileri başarıyla güncellendi.");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Güncelleme işlemi başarısız.");
-            //    }
-            //}
-
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Hata: " + ex.Message);
-            //}
-            //finally
-            //{
-            //    baglanti.Close();
-            //}
-            //txtAdSoyad.Clear();
-            //txtTel.Clear();
-            //txtID.Clear();
-            //cmbGorevAd.SelectedIndex = -1;
-            //btnListele.PerformClick();
         }
 
         private void formAdminPersonelGiris_Load(object sender, EventArgs e)

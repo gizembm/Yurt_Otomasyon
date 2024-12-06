@@ -42,6 +42,7 @@
             // 
             // cmbAy
             // 
+            this.cmbAy.BackColor = System.Drawing.Color.PaleTurquoise;
             this.cmbAy.FormattingEnabled = true;
             this.cmbAy.Items.AddRange(new object[] {
             "EYLÜL",
@@ -71,6 +72,7 @@
             // 
             // txtOdenecekTutar
             // 
+            this.txtOdenecekTutar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtOdenecekTutar.Location = new System.Drawing.Point(156, 142);
             this.txtOdenecekTutar.Name = "txtOdenecekTutar";
             this.txtOdenecekTutar.Size = new System.Drawing.Size(100, 22);
@@ -79,7 +81,7 @@
             // 
             // dgvOdemeler
             // 
-            this.dgvOdemeler.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvOdemeler.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvOdemeler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOdemeler.Location = new System.Drawing.Point(317, 67);
             this.dgvOdemeler.Name = "dgvOdemeler";
@@ -126,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(834, 448);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnOdemeler);

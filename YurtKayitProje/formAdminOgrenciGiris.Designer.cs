@@ -76,7 +76,7 @@
             // 
             // dgvOgrenciListele
             // 
-            this.dgvOgrenciListele.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvOgrenciListele.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvOgrenciListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOgrenciListele.Location = new System.Drawing.Point(295, 47);
             this.dgvOgrenciListele.Name = "dgvOgrenciListele";
@@ -88,7 +88,7 @@
             // 
             // dgvIzin
             // 
-            this.dgvIzin.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvIzin.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvIzin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvIzin.Location = new System.Drawing.Point(1152, 47);
             this.dgvIzin.Name = "dgvIzin";
@@ -99,6 +99,7 @@
             // 
             // txtTcNo
             // 
+            this.txtTcNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTcNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTcNo.Location = new System.Drawing.Point(116, 47);
             this.txtTcNo.Name = "txtTcNo";
@@ -109,6 +110,7 @@
             // 
             // txtSoyad
             // 
+            this.txtSoyad.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtSoyad.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSoyad.Location = new System.Drawing.Point(116, 131);
             this.txtSoyad.Name = "txtSoyad";
@@ -119,6 +121,7 @@
             // 
             // txtAdres
             // 
+            this.txtAdres.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAdres.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAdres.Location = new System.Drawing.Point(116, 170);
             this.txtAdres.Name = "txtAdres";
@@ -128,6 +131,7 @@
             // 
             // txtKanGrubu
             // 
+            this.txtKanGrubu.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKanGrubu.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKanGrubu.Location = new System.Drawing.Point(116, 203);
             this.txtKanGrubu.Name = "txtKanGrubu";
@@ -136,6 +140,7 @@
             // 
             // txtMailAdresi
             // 
+            this.txtMailAdresi.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtMailAdresi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtMailAdresi.Location = new System.Drawing.Point(116, 241);
             this.txtMailAdresi.Name = "txtMailAdresi";
@@ -145,6 +150,7 @@
             // 
             // txtTelNo
             // 
+            this.txtTelNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTelNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTelNo.Location = new System.Drawing.Point(116, 326);
             this.txtTelNo.Name = "txtTelNo";
@@ -154,6 +160,7 @@
             // 
             // txtVeliTelNo
             // 
+            this.txtVeliTelNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtVeliTelNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtVeliTelNo.Location = new System.Drawing.Point(116, 370);
             this.txtVeliTelNo.Name = "txtVeliTelNo";
@@ -262,6 +269,7 @@
             // 
             // txtOdaNo
             // 
+            this.txtOdaNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtOdaNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOdaNo.Location = new System.Drawing.Point(116, 409);
             this.txtOdaNo.Name = "txtOdaNo";
@@ -325,8 +333,9 @@
             // 
             // dtpBaslangic
             // 
+            this.dtpBaslangic.CalendarMonthBackground = System.Drawing.Color.PaleTurquoise;
             this.dtpBaslangic.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpBaslangic.Location = new System.Drawing.Point(915, 236);
+            this.dtpBaslangic.Location = new System.Drawing.Point(933, 239);
             this.dtpBaslangic.Name = "dtpBaslangic";
             this.dtpBaslangic.Size = new System.Drawing.Size(200, 22);
             this.dtpBaslangic.TabIndex = 5;
@@ -334,7 +343,7 @@
             // dtpBitis
             // 
             this.dtpBitis.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpBitis.Location = new System.Drawing.Point(915, 297);
+            this.dtpBitis.Location = new System.Drawing.Point(933, 300);
             this.dtpBitis.Name = "dtpBitis";
             this.dtpBitis.Size = new System.Drawing.Size(200, 22);
             this.dtpBitis.TabIndex = 5;
@@ -343,7 +352,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(947, 217);
+            this.label10.Location = new System.Drawing.Point(965, 220);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(141, 17);
             this.label10.TabIndex = 6;
@@ -353,7 +362,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(963, 277);
+            this.label11.Location = new System.Drawing.Point(981, 280);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 17);
             this.label11.TabIndex = 6;
@@ -361,8 +370,9 @@
             // 
             // txtOgrNo
             // 
+            this.txtOgrNo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtOgrNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrNo.Location = new System.Drawing.Point(990, 167);
+            this.txtOgrNo.Location = new System.Drawing.Point(1008, 170);
             this.txtOgrNo.Name = "txtOgrNo";
             this.txtOgrNo.Size = new System.Drawing.Size(125, 25);
             this.txtOgrNo.TabIndex = 7;
@@ -412,6 +422,7 @@
             // 
             // txtKullaniciID
             // 
+            this.txtKullaniciID.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtKullaniciID.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullaniciID.Location = new System.Drawing.Point(116, 442);
             this.txtKullaniciID.Name = "txtKullaniciID";
@@ -453,6 +464,7 @@
             // 
             // txtAd
             // 
+            this.txtAd.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAd.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAd.Location = new System.Drawing.Point(116, 94);
             this.txtAd.Name = "txtAd";
@@ -476,7 +488,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1881, 527);
             this.Controls.Add(this.pbgeriDon);
             this.Controls.Add(this.btnIzinRaporla);
