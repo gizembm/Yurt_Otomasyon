@@ -1,86 +1,99 @@
-<h1 align="center">🏨 Yurt Kayıt Otomasyonu</h1>
+# 🏨 Yurt Kayıt Otomasyonu
 
-<p align="center">
-  Düzce Üniversitesi Bilgisayar Mühendisliği Bölümü<br>
-  BM309 - Veritabanı Yönetim Sistemleri Dersi Projesi
-</p>
+**BM309 - Veritabanı Yönetim Sistemleri Dersi Projesi**  
+**Düzce Üniversitesi - Bilgisayar Mühendisliği Bölümü**  
+
+Bu proje, bir yurtta kalan öğrencilerin tüm kayıt işlemlerini dijitalleştirmeyi amaçlayan, ilişkisel veritabanı tabanlı bir otomasyon sistemidir. Öğrenciler, personel ve yöneticiler (admin) sisteme farklı rollerle giriş yaparak kendi yetki alanlarındaki işlemleri gerçekleştirebilmektedir.
 
 ---
 
-## 👩‍💻 Geliştiriciler
+## 👨‍👩‍👧‍👧 Geliştirici Ekip
 
-| Öğrenci Adı       | Öğrenci Numarası |
-|------------------|------------------|
-| Gizem Efe        | 221001015         |
-| Züleyha Akbaş    | 221001003         |
-| Hilal Şarkışla   | 221001054         |
-| Elif Sude Ünal   | 221001058         |
+| Ad Soyad        | 
+|-----------------|
+| Gizem Efe       | 
+| Züleyha Akbaş   | 
+| Hilal Şarkışla  | 
+| Elif Sude Ünal  | 
 
 ---
 
 ## 🎯 Projenin Amacı
 
-Bu proje, yurtta kalan öğrencilerin kayıtlarını yönetmek amacıyla geliştirilmiş bir **veritabanı otomasyon sistemidir**. Öğrenciler, personel ve admin kullanıcıları farklı yetkilerle sisteme giriş yapabilir ve kendilerine özel işlemleri gerçekleştirebilirler.
+Yurtlarda tutulan öğrenci, personel ve oda kayıtlarının manuel olarak değil, veritabanı destekli bir uygulama ile **daha güvenli, hızlı ve doğru şekilde yönetilmesini sağlamak**. Ayrıca, kullanıcıların sistemde rol bazlı yetkilere göre işlem yapabilmesini ve veri güvenliğini ön planda tutan bir yapı kurmak hedeflenmiştir.
 
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- ✅ C# (Windows Forms)
-- ✅ Microsoft SQL Server
-- ✅ ADO.NET
-- ✅ SQL Trigger ve Procedure’ler
-- ✅ Crystal Reports
-- ✅ Excel Aktarımı
+- **C# (Windows Forms):** Arayüz geliştirme
+- **Microsoft SQL Server:** Veritabanı yönetimi
+- **ADO.NET:** Veritabanı bağlantısı ve işlemleri
+- **SQL Trigger ve Stored Procedure'ler:** Otomatik veri kontrolü ve işlem yönetimi
+- **Crystal Reports:** Raporlama ve çıktı alma
+- **Excel Entegrasyonu:** Veri dışa/içe aktarımı
 
 ---
 
-## 🗃️ Veritabanı Tasarımı
+## 🗃️ Veritabanı Yapısı
 
-**Ana Tablolar:**
-- `GOREV`
-- `PERSONEL`
-- `ODALAR`
-- `YATAKLAR`
-- `OGRENCI`
-- `KULLANICI`
+### Tablolar ve İlişkiler:
 
-Veritabanı ilişkisel şekilde tasarlanmış olup birincil ve yabancı anahtarlar kullanılmıştır.  
-ER Diyagramı ve tablo ilişkileri için `docs/ERDiagram.png` dosyasına bakabilirsiniz. *(Bu dosyayı GitHub’a ekran görüntüsü olarak eklersen harika olur.)*
+- `GOREV`: Personelin görev tanımları
+- `PERSONEL`: Personel bilgileri (görev ile ilişkili)
+- `ODALAR`: Oda bilgileri (personel ile ilişkili)
+- `YATAKLAR`: Odaya ait yatak bilgileri
+- `OGRENCI`: Öğrenci kayıt bilgileri (odalarla ilişkili)
+- `KULLANICI`: Tüm kullanıcıların sistem erişim bilgileri (admin, öğrenci, personel)
 
----
-
-## 🔐 Kullanıcı Rolleri ve Yetkiler
-
-| Rol      | Yetkiler |
-|----------|----------|
-| 👩‍💼 Admin | Kullanıcı yönetimi, öğrenci/personel işlemleri, yatak durumu, Crystal Reports, Excel aktarımı, yedekleme |
-| 🎓 Öğrenci | Kişisel bilgi güncelleme, ödeme yapma, izin alma |
-| 🧑‍🔧 Personel | Görevli olduğu odaları ve öğrencileri görme, kişisel bilgi güncelleme |
+📌 **ER Diyagramı** ve şema detayları için `docs/ERDiagram.png` dosyasını inceleyebilirsiniz.
 
 ---
 
-## 🧪 Öne Çıkan Özellikler
+## 🔐 Kullanıcı Rolleri ve Yetkileri
 
-- 📌 **SQL Trigger**: Otomatik veri işleme
-- 📌 **Stored Procedures**: Fonksiyonel veri işlemleri
-- 📌 **Excel Entegrasyonu**: Verileri dışa ve içe aktarma
-- 📌 **Crystal Reports**: Görsel raporlamalar (Silinen Öğrenci Raporu, Yatak Durum Raporu vb.)
+### 👩‍💼 Admin
+- Kullanıcı işlemleri (ekle, sil, güncelle, listele)
+- Öğrenci, personel ve yatak işlemleri
+- Raporlama (Crystal Reports)
+- Excel ile veri aktarımı
+- Yedek alma/yedekten geri yükleme
+
+### 🎓 Öğrenci
+- Kişisel bilgi görüntüleme ve güncelleme
+- Ödeme yapma ve geçmiş ödemeleri görüntüleme
+- İzin alma ve izni görüntüleme/silme
+
+### 🧑‍🔧 Personel
+- Görevli olduğu odaları ve öğrenci bilgilerini görüntüleme
+- Kişisel bilgileri güncelleme
 
 ---
 
-## 🖥️ Ekran Görüntüleri
+## 📌 Uygulama Özellikleri
 
-<img src="docs/giris-formu.png" alt="Giriş Formu" width="600"/>
-<img src="docs/admin-paneli.png" alt="Admin Paneli" width="600"/>
-<img src="docs/ogrenci-izin-formu.png" alt="İzin Alma Formu" width="600"/>
-
-*📸 Ekran görüntüleri klasörüne `docs/` adlı bir klasör oluşturup görselleri ekleyebilirsin.*
+- ✅ Kullanıcı giriş sistemi (Rol bazlı)
+- ✅ SQL Trigger ile otomatik veri tetikleyicileri
+- ✅ Stored Procedure'lerle işlem kolaylığı
+- ✅ Crystal Reports ile şık rapor çıktıları
+- ✅ Excel dosyası ile veri aktarımı
+- ✅ Tablolar arası ilişkisel yapı ve veri bütünlüğü
+- ✅ Veri yedekleme ve geri yükleme modülü
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
+## 📸 Ekran Görüntüleri
 
-1. Bu projeyi bilgisayarınıza klonlayın:
-```bash
-git clone https://github.com/kullaniciAdi/YurtKayitOtomasyonu.git
+Proje arayüzüne ait bazı örnek görüntüler:
+
+- Giriş Formu  
+- Admin Paneli  
+- Öğrenci Kayıt ve İzin Alma Formu  
+- Crystal Reports Rapor Ekranları  
+
+🗂️ Görseller `docs/` klasörüne eklendiğinde buraya entegre edebilirsin:
+
+```html
+<img src="docs/giris-formu.png" width="600"/>
+<img src="docs/admin-paneli.png" width="600"/>
+<img src="docs/izin-formu.png" width="600"/>
