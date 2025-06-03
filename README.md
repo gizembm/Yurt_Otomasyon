@@ -37,7 +37,7 @@ Yurtlarda tutulan öğrenci, personel ve oda kayıtlarının manuel olarak deği
 - `OGRENCI`: Öğrenci kayıt bilgileri (odalarla ilişkili)
 - `KULLANICI`: Tüm kullanıcıların sistem erişim bilgileri (admin, öğrenci, personel)
 
-📌 **ER Diyagramı** ve şema detayları için `docs/ERDiagram.png` dosyasını inceleyebilirsiniz.
+📌 **ER Diyagramı** ve şema detayları için `Ekran Görüntüleri` kısmından inceleyebilirsiniz.
 
 ---
 
@@ -96,4 +96,7 @@ Proje arayüzüne ait bazı örnek ekran görüntüleri:
   <img src="https://github.com/user-attachments/assets/0e85fc6b-5499-4513-adcd-8551e8ee27ce" width="800" />
   <img src="https://github.com/user-attachments/assets/e48774da-237d-4b4c-bbb9-79ed58ff051d" width="800" />
   <img src="https://github.com/user-attachments/assets/780e92d8-a0e8-48dc-a311-65890ae33bd9" width="800" />
+  <img src="https://github.com/user-attachments/assets/a3f279ac-3c5a-4ef5-95ba-5fc0ceca92e9" width="800" />
+  
+
 </p>
