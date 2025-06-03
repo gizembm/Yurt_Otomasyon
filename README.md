@@ -5,7 +5,6 @@
 
 Bu proje, bir yurtta kalan öğrencilerin tüm kayıt işlemlerini dijitalleştirmeyi amaçlayan, ilişkisel veritabanı tabanlı bir otomasyon sistemidir. Öğrenciler, personel ve yöneticiler (admin) sisteme farklı rollerle giriş yaparak kendi yetki alanlarındaki işlemleri gerçekleştirebilmektedir.
 
----
 
 
 ---
@@ -84,25 +83,17 @@ Yurtlarda tutulan öğrenci, personel ve oda kayıtlarının manuel olarak deği
 
 ## 📸 Ekran Görüntüleri
 
-Proje arayüzüne ait bazı örnek görüntüler:
+Proje arayüzüne ait bazı örnek ekran görüntüleri:
 
-![image](https://github.com/user-attachments/assets/54291a41-8e5f-46ee-8839-b2285bac2d01)
-
-![image](https://github.com/user-attachments/assets/f37a7475-ba92-49bf-85ee-6e27b6889994)
-
-![image](https://github.com/user-attachments/assets/08133c62-590a-437d-8918-74fe537c68b0)
-
-![image](https://github.com/user-attachments/assets/c972a74c-c0f0-4d7b-9c47-3ed324005cce)
-
-![image](https://github.com/user-attachments/assets/684b5ce2-5477-4836-b0c1-f578c4984b8c)
-
-![image](https://github.com/user-attachments/assets/235f1de6-1208-48c8-8218-b5befed9cc91)
-
-![image](https://github.com/user-attachments/assets/58aacf45-1511-4a46-acdf-092e9b3ff15e)
-
-![image](https://github.com/user-attachments/assets/0e85fc6b-5499-4513-adcd-8551e8ee27ce)
-
-![image](https://github.com/user-attachments/assets/e48774da-237d-4b4c-bbb9-79ed58ff051d)
-
-![image](https://github.com/user-attachments/assets/780e92d8-a0e8-48dc-a311-65890ae33bd9)
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/54291a41-8e5f-46ee-8839-b2285bac2d01" width="600" />
+  <img src="https://github.com/user-attachments/assets/f37a7475-ba92-49bf-85ee-6e27b6889994" width="600" />
+  <img src="https://github.com/user-attachments/assets/08133c62-590a-437d-8918-74fe537c68b0" width="600" />
+  <img src="https://github.com/user-attachments/assets/c972a74c-c0f0-4d7b-9c47-3ed324005cce" width="600" />
+  <img src="https://github.com/user-attachments/assets/684b5ce2-5477-4836-b0c1-f578c4984b8c" width="600" />
+  <img src="https://github.com/user-attachments/assets/235f1de6-1208-48c8-8218-b5befed9cc91" width="600" />
+  <img src="https://github.com/user-attachments/assets/58aacf45-1511-4a46-acdf-092e9b3ff15e" width="600" />
+  <img src="https://github.com/user-attachments/assets/0e85fc6b-5499-4513-adcd-8551e8ee27ce" width="600" />
+  <img src="https://github.com/user-attachments/assets/e48774da-237d-4b4c-bbb9-79ed58ff051d" width="600" />
+  <img src="https://github.com/user-attachments/assets/780e92d8-a0e8-48dc-a311-65890ae33bd9" width="600" />
+</p>
